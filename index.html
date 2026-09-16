@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Project</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="SKU.html">SKU Generator</a> / 
+        <a href="index.html" class="active">Receipt Generator</a>
+    </nav>
+
+    <div class="container" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Courier, monospace; font-size: larger;">
+        <h1>Zabby Patties' Warehouse</h1>
+            <input type="checkbox" id="burger1" value="99">Zabby Patties - $99</option><br>
+            <input type="checkbox" id="burger2" value="119">Cheesy Patties - $119</option><br>
+            <input type="checkbox" id="burger3" value="149"> Post-Workout Patties - 149</option><br>
+            <input type="checkbox" id="burger4" value="169">Pork-Lover Patties - $169</option><br>
+            <input type="checkbox" id="burger5" value="199">Premium Patties - $199</option><br>
+
+            <h3>Select Size</h3>
+            <input type="radio" id="regular" name="size" value="0" checked>
+            <label for="regular">Regular (+$0)</label><br>
+            <input type="radio" id="large" name="size" value="30">
+            <label for="large">Large (+$30)</label><br><br>
+
+        <button py-click="create_order">Create Order</button><br><br>
+        <div id="output"><strong>Reciept</strong></div><br>
+        <script type="py" src="main.py"></script>
+    </div>
+</body>
+
+</html>

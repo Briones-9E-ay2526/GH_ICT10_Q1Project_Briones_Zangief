@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Project</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="SKU.html">SKU Generator</a> / 
+        <a href="index.html" class="active">Receipt Generator</a>
+    </nav>
+    
+    <div class="container" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: larger;">
+        <h1>SKU Generator</h1><br>
+        <label for="categories">Category:</label>
+        <select id="categories">
+            <option value="RM">Rice Meal</option>
+            <option value="SD">Sides</option>
+            <option value="DK">Drinks</option>
+        </select><br>
+        <label for="product">Products</label>
+        <select id="product">
+            <option value="CNR">Chicken and Rice</option>
+            <option value="FS">Fries</option>
+            <option value="IT">Iced Tea</option>
+        </select><br>
+        <label for="qty">Quantities</label>
+        <select id="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+
+        <button py-click="create_SKU">Generate SKU</button><br><br>
+        <div id="output"><strong>SKU</strong></div><br>
+        <script type="py" src="sku.py"></script>
+    </div>
+</body>
+
+</html>
